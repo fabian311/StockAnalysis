@@ -7,4 +7,3 @@ Just select the stock ticker and the app shows you info about:
 - Balance Sheet
 - etc.
 
-### Here's a short video providing a visual demo of the app
