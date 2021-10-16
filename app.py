@@ -69,11 +69,6 @@ st.write('---')
 
 st.header('Stock Price Overview')
 
-#adj_close = yf.download(ticker, start, end)['Adj Close']
-
-#infodf = pd.DataFrame.from_dict(data=company.info, 
-                                #orient='index', 
-                                #columns=['Value']).T
 
 # Insert a Moving Average and Rolling Std. Visualisation Option
 ma_checkbox = st.checkbox('Moving Average')
@@ -177,8 +172,7 @@ if returns:
 financials_checkbox = st.sidebar.checkbox('Financials')
 if financials_checkbox:
     st.header('Financials')
-    #financials = pd.DataFrame(company.financials.dropna(), 
-                              #columns=company.financials.columns.date)
+
     st.table(financials)	   
 	   
     viz = st.sidebar.radio('Data Visualisation Options', 
@@ -214,8 +208,7 @@ if financials_checkbox:
 bsheet_checkbox = st.sidebar.checkbox('Balance Sheet')
 if bsheet_checkbox:
     st.header('Balance Sheet')
-    #bsheet = pd.DataFrame(company.balancesheet.dropna(), 
-                              #columns=company.balancesheet.columns.date)
+
     st.table(bsheet)
     viz = st.sidebar.radio('Data Visualisation Options',
                            ['Yes','No'],
@@ -249,7 +242,6 @@ if bsheet_checkbox:
 earnings_checkbox = st.sidebar.checkbox('Earnings')
 if earnings_checkbox:
     st.header('Earnings')
-    #earnings = pd.DataFrame(company.earnings.reset_index().dropna())
     st.table(earnings)
     viz = st.sidebar.radio('Data Visualisation Options', 
                            ['Yes','No'],
@@ -302,7 +294,6 @@ if earnings_checkbox:
 holders_checkbox = st.sidebar.checkbox('Institutional Holders')
 if holders_checkbox:
     st.header('Institutional Holders')
-    #holders = pd.DataFrame(company.institutional_holders.dropna())
     st.table(holders)
     
 
@@ -310,6 +301,4 @@ if holders_checkbox:
 rec_checkbox = st.sidebar.checkbox('Analysts Recommendations (10 most recent available)')
 if rec_checkbox:
     st.header('Analysts Recommendations')
-    #rec = pd.DataFrame(company.recommendations.iloc[-11:-1].set_index(company.recommendations.iloc[-11:-1].index.date))
     st.table(rec)
-
