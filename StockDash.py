@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import yfinance as yf
 import plotly.express as px
-import plotly.graph_objs as go
 from PIL import Image
 
 def plot_line(df,x_val,y_val,ticks,color):
