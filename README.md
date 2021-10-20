@@ -13,8 +13,8 @@ Just pick the stock ticker in the selectbox and the app shows info about:
 
 #### Part One
 
-https://user-images.githubusercontent.com/61798212/138103365-5c7b0181-2c5e-4e83-993a-795c8a974c54.mp4
+https://user-images.githubusercontent.com/61798212/138140650-c2bfcca0-c164-45c5-8623-e82545fff627.mp4
 
 #### Part Two
 
-https://user-images.githubusercontent.com/61798212/138104113-e90c3b9a-a679-4d77-b4a1-bb511a6d96c7.mp4
+https://user-images.githubusercontent.com/61798212/138140704-a52ae588-f3fe-4008-81f5-ea66a2db8077.mp4
