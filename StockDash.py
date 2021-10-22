@@ -64,8 +64,6 @@ end = st.date_input('Select End Date',
 adj_close, volume, infodf, financials, bsheet, earnings, holders, rec = get_data(ticker)
 
 # Sidebar
-pic = Image.open('C:/Users/fabia/OneDrive/Pictures/stock.jfif')
-st.sidebar.image(pic)
 st.sidebar.header(ticker)
 st.sidebar.subheader('Choose options to visualise')
 
